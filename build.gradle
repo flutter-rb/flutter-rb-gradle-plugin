@@ -1,0 +1,54 @@
+plugins {
+    id 'groovy'
+    id 'java-gradle-plugin'
+    id 'codenarc'
+    id 'de.aaschmid.cpd' version '3.2'
+}
+
+group 'com.smlnskgmail.jaman.flutterrb'
+version '1.0.0'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.codehaus.groovy:groovy-all:3.0.5'
+}
+
+gradlePlugin {
+    plugins {
+        infoPlugin {
+            id = 'com.smlnskgmail.jaman.flutterrb'
+            implementationClass = 'com.smlnskgmail.jaman.flutterrb.InfoPlugin'
+        }
+    }
+}
+
+codenarc {
+    toolVersion = '1.4'
+}
+
+codenarcMain {
+    def codenarcRulesPath = "$rootDir/codenarc-rules.groovy"
+    def codenarcRules = new File(codenarcRulesPath)
+    if (!codenarcRules.exists()) {
+        new URL(
+                'https://raw.githubusercontent.com/fartem/repository-rules/master/rules/groovy/codenarc/codenarc.groovy'
+        ).withInputStream {
+            i -> codenarcRules.withOutputStream {
+                it << i
+            }
+        }
+    }
+    configFile = codenarcRules
+}
+
+cpd {
+    language = 'groovy'
+    toolVersion = '6.20.0'
+}
+
+cpdCheck {
+    source = files('src/main/groovy')
+}
