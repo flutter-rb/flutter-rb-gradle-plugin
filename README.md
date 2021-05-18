@@ -2,7 +2,7 @@
 
 ## About
 
-Gradle plugin for [flutter_rb](https://github.com/fartem/flutter_rb).
+Gradle plugin for [flutter_rb](https://github.com/fartem/flutter-rb).
 
 ## How to use
 
