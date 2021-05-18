@@ -6,7 +6,7 @@ Gradle plugin for [flutter_rb](https://github.com/fartem/flutter-rb).
 
 ## How to use
 
-This plugin needs for [flutter_rb](https://github.com/fartem/flutter_rb). Just implement it to your library and use `flutter_rb`.
+This plugin needs for [flutter_rb](https://github.com/fartem/flutter-rb). Just implement it to your library and use `flutter_rb`.
 
 ### Implementation
 
