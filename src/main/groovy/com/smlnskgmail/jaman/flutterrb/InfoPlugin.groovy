@@ -12,7 +12,9 @@ class InfoPlugin implements Plugin<Project> {
                 def output = [
                         'version': project.version
                 ]
-                def outputFile = new File('./flutter_rb_gradle_plugin_output.json')
+                def outputFile = new File(
+                        "$project.rootDir.path/flutter_rb_gradle_plugin_output.json"
+                )
                 outputFile.write(
                         JsonOutput.prettyPrint(
                                 JsonOutput.toJson(output)
