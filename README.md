@@ -21,7 +21,7 @@ buildscript {
 
     dependencies {
         // Other dependencies
-        classpath 'com.github.fartem:flutter-rb-gradle-plugin:1.0.0'
+        classpath 'com.github.fartem:flutter-rb-gradle-plugin:1.0.1'
     }
 }
 
@@ -29,7 +29,7 @@ apply plugin: 'com.smlnskgmail.jaman.flutterrb'
 
 dependencies {
     // Other dependencies
-    implementation 'com.github.fartem:flutter-rb-gradle-plugin:1.0.0'
+    implementation 'com.github.fartem:flutter-rb-gradle-plugin:1.0.1'
 }
 ```
 
