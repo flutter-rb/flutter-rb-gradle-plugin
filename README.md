@@ -46,7 +46,8 @@ You can run plugin as Gradle task:
 Read [Commit Convention](https://github.com/fartem/repository-rules/blob/master/commit-convention/COMMIT_CONVENTION.md). Make sure your build is green before you contribute your pull request. Then:
 
 ```shell
-./gradlew clean build
+$ ./gradlew clean
+$ ./gradlew build
 ```
 
 ## Contributors
