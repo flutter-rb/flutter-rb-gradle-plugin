@@ -2,11 +2,11 @@
 
 ## About
 
-Gradle plugin for [flutter_rb](https://github.com/fartem/flutter-rb).
+Gradle plugin for [flutter_rb](https://github.com/flutter-rb/flutter-rb).
 
 ## How to use
 
-This plugin needs for [flutter_rb](https://github.com/fartem/flutter-rb). Just implement it to your library and use `flutter_rb`.
+This plugin needs for [flutter_rb](https://github.com/flutter-rb/flutter-rb). Just implement it to your library and use `flutter_rb`.
 
 ### Implementation
 
@@ -21,7 +21,7 @@ buildscript {
 
     dependencies {
         // Other dependencies
-        classpath 'com.github.fartem:flutter-rb-gradle-plugin:1.0.1'
+        classpath 'com.github.flutter-rb:flutter-rb-gradle-plugin:1.0.1'
     }
 }
 
@@ -29,7 +29,7 @@ apply plugin: 'com.smlnskgmail.jaman.flutterrb'
 
 dependencies {
     // Other dependencies
-    implementation 'com.github.fartem:flutter-rb-gradle-plugin:1.0.1'
+    implementation 'com.github.flutter-rb:flutter-rb-gradle-plugin:1.0.1'
 }
 ```
 
