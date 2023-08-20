@@ -1,5 +1,8 @@
 # flutter-rb-gradle-plugin
 
+[![GitHubActions](https://github.com/fartem/adaptive-recycler-view/workflows/Build/badge.svg)](https://github.com/flutter-rb/flutter-rb-gradle-plugin/actions?query=workflow%3ABuild)
+[![JitPack](https://jitpack.io/v/flutter-rb/flutter-rb-gradle-plugin.svg)](https://jitpack.io/#flutter-rb/flutter-rb-gradle-plugin)
+
 ## About
 
 Gradle plugin for [flutter_rb](https://github.com/flutter-rb/flutter-rb).
